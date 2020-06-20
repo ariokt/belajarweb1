@@ -1,0 +1,319 @@
+
+/*default*/
+nav,
+header,
+footer{
+	display: block;
+}
+
+body{
+	line-height: 1;
+	margin: 0;
+}
+
+div.leftsidecol{
+	margin-left: 10%;
+}
+
+h1.large{
+	font-size: 56px;
+	margin: 0;
+	line-height: 70px;
+	font-family: 'Piedra', cursive;
+}
+
+input[type="Password"], input[type="text"]{
+	font-size: 20px;
+	width: 400px;
+	min-width: 100px;
+	padding: 5px
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+#gradien{
+	background-color: #c978ff;
+	background-image: linear-gradient(#c978ff, pink);
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+h1.hcontent{
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	line-height: 70px;
+}
+
+div.box{
+	background-color: #fff;	
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,.15);
+	text-align: center;
+	padding: 15px;
+	height: 300px;
+	margin: 15px;
+	border-radius: 7px;
+	border-color: #c978ff;
+}
+
+label.content{
+	font-size: 35px;
+	font-weight: bold;
+	
+}
+
+img.content{
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+}
+
+div.box p{
+	font-size: 20px;
+}
+
+div.col-12{
+	text-align: center;
+	margin: 15px;
+}
+
+div.col-12 button{
+	padding: 15px 30px 15px 30px;
+	font-size: 30px;
+	background-color: #c978ff;
+	border-radius: 7px;
+	margin:auto;
+}
+
+div.col-12 button:hover{
+	background-color: black;
+	color: white;
+}
+
+div.profilekiri{
+	text-align: center;
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+	padding: 15px;
+	margin-left: 50%;
+	background-color: #8e47ff;
+	height: 300px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+div.profilekanan{
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+	text-align: left;
+	margin-right: 50%;
+	padding: 15px;
+	height: 300px;
+	border-radius: 0px 10px 10px 0px;
+}
+
+img.profilepic{
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+	border-radius: 50%;
+}
+
+label.profilename{
+	font-family: 'Piedra', cursive;
+	font-size: 35px;
+	margin: 15px;
+}
+
+div.mysosmed{
+	background-color: #fff;
+}
+
+p.myprofile{
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+a img{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+a img:hover{
+	background-color: blue;
+}
+
+footer div.col-4{
+	background-color: #c978ff;
+	height: 150px;
+}
+
+div.initial {
+	text-align: center;
+	padding: 70px;
+}
+
+label.initial{
+	font-family: 'Piedra', cursive;
+	font-size: 35px;
+}
+
+ul.footer li{
+	list-style: none;
+}
+
+div.pinformation{
+	padding: 40px;
+}
+
+li.infhead{
+	margin: 0px 0px 15px 0px;
+}
+
+footer div.copyright{
+	width: 100%;
+	background-color: #c978ff;
+	text-align: center;
+}
+
+
+/*.row::after{
+	display: table;
+	clear: both;
+	content: "";
+}*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+	box-sizing: border-box;
+}
+
+
+/*nav bar*/
+nav{
+	width: 100%;
+	margin: 0;
+}
+
+nav ul{
+	background-color: #c978ff;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+ul.topnav li{
+	list-style: none;
+	float: left;
+}
+
+ul.topnav li.topnav-right{
+	float: right;
+}
+
+ul.topnav li a {
+	display: block;
+	text-decoration: none;
+	height: 16px;
+	text-align: center;
+	padding: 25px;
+	text-transform: uppercase;
+	color: black;
+}
+
+ul.topnav li a:hover{
+	background-color: black;
+	color: white;
+}
+
+ul.topnav li.dropdownmenu{
+	display: none;
+}
+
+
+
+/*MOBILE*/
+@media screen and (max-width: 680px){
+	ul.topnav li:not(:nth-child(1)){
+		display: none;
+	}
+
+	ul.topnav li.dropdownmenu{
+		display: block;
+		float: right;
+	}
+
+	ul.topnav.response li.dropdownmenu{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	ul.topnav.response {
+		position: relative;
+	}
+
+	ul.topnav.response li{
+		display: block;
+		float: none;
+	}
+
+	ul.topnav.response li a{
+		text-align: left;
+	}
+
+	.col-6 {width: 100%;}
+
+	div.leftsidecol, div.rightsidecol{
+	margin: 15px;
+	}
+
+	input[type="Password"], input[type="text"]{
+	width: 200px;
+	}
+
+	iframe{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.col-4 {width: 100%;}
+
+	div.profilekiri{
+		width: 100%
+		height: auto;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	div.profilekanan{
+		width: 100%;
+		height: auto;
+		margin: 0;
+		border-radius: 0;
+	}
+
+
+}
